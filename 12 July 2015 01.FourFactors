@@ -1,0 +1,29 @@
+using System;
+
+class Factors
+{
+    static void Main()
+    {
+        uint fg = uint.Parse(Console.ReadLine());
+        uint fga = uint.Parse(Console.ReadLine());
+        uint pointThree = uint.Parse(Console.ReadLine());
+        uint tov = uint.Parse(Console.ReadLine());
+        uint orb = uint.Parse(Console.ReadLine());
+        uint oppDrb = uint.Parse(Console.ReadLine());
+        uint ft = uint.Parse(Console.ReadLine());
+        uint fta = uint.Parse(Console.ReadLine());
+
+        double efg = (fg + 0.5 * pointThree) / fga;
+        double tovF = (tov / (fga + (0.44 * fta)+tov));
+        double orbF = (double)orb / (orb + oppDrb);
+        double ftf = (double)ft / fga;
+
+
+        Console.WriteLine("eFG% {0:F3}", efg);
+        Console.WriteLine("TOV% {0:F3}", tovF);
+        Console.WriteLine("ORB% {0:F3}", orbF);
+        Console.WriteLine("FT% {0:F3}", ftf);
+
+    }
+}
+
