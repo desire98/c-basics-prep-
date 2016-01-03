@@ -1,0 +1,31 @@
+using System;
+using System.Linq;
+class Currency
+
+{
+    static void Main()
+    {
+        /*
+        •	The number r – amount of rubles Te4o has to pay for the game at the Russian site.
+•	The number d – amount of dollars Te4o has to pay for the game at the American site.
+•	The number e – amount of euro Te4o has to pay for the game at the official site.
+•	The number b – amount of leva Te4o has to pay for the special offer at B.
+•	The number m – amount of leva Te4o has to pay for the game at M's site.
+
+        */
+        decimal r = (decimal.Parse(Console.ReadLine()) / 100) * 3.5m;
+        decimal d = decimal.Parse(Console.ReadLine()) * 1.5m;
+        decimal e = decimal.Parse(Console.ReadLine()) * 1.95m;
+        decimal b = decimal.Parse(Console.ReadLine()) / 2m;
+        decimal m = decimal.Parse(Console.ReadLine());
+
+
+        decimal[] prices = new decimal[]
+            {
+                r,d,e,b,m
+            };
+        decimal minPrice = prices.Min();
+        Console.WriteLine("{0:F2}", minPrice);
+    }
+}
+
