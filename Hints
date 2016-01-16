@@ -1,0 +1,75 @@
+01.
+string[] numbers = Console.ReadLine().Split(' ');
+02
+List<int> list = new List<int>();
+	list.Add(2);
+	list.Add(3);
+	list.Add(5);
+	list.Add(7);
+03. BinToDec
+var s = "101011";    // my binary "number" as a string
+var dec = 0;
+for( int i=0; i<s.Length; i++ ) {
+  // we start with the least significant digit, and work our way to the left
+  if( s[s.Length-i-1] == '0' ) continue;
+  dec += (int)Math.Pow( 2, i );
+}
+04.Dec/Int to String
+string hexaStr = dec.ToString
+05.DecToHex
+        long hexa = long.Parse(hexaStr, NumberStyles.HexNumber);
+
+05
+        List<double> list = new List<double>();
+ list.Add(double.Parse(Console.ReadLine()));
+06.
+      Console.WriteLine(obj.ToString());  /Convert.ToString(i);
+
+07. {0:F2}
+
+08. Random
+            Random rnd = new Random();
+                Console.Write(rnd.Next(min, max + 1) + " ");
+09.
+        int[] fibarray = new int[] { 0, 1, 1, 2, 3, 5, 8, 13 };
+10.
+int a = 3628800;
+        string myString = a.ToString();
+11. Splitting of a String
+int a = 3628800;
+        string myString = a.ToString();
+        string[] numberArray = new string[myString.Length];
+        int counter = 0;
+
+        for (int i = 0; i < myString.Length; i++)
+        {
+            numberArray[i] = myString.Substring(counter, 1); // 1 is split length
+            counter++;
+        }
+
+        Console.WriteLine(string.Join(" ", numberArray)); //output >>> 0 1 2 3 4 5
+12.Alphabet
+matrix[i,j] = (char)(((c++ - 65)%26)+65;
+13.System.Lower()
+14. n/2-1
+15.Substring
+using System;
+
+class Program
+{
+    static void Main()
+    {
+	string input = "OneTwoThree";
+
+	// Get first three characters.
+	string sub = input.Substring(0, 3);
+	Console.WriteLine("Substring: {0}", sub);
+    }
+}
+16
+int num = 100;
+        string numAsString = Convert.ToString(num, 2).PadLeft(16, '0');
+        Console.WriteLine(numAsString);
+17:
+number ^= 1<<position;
+обръща бита!
