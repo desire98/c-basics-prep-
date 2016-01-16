@@ -73,3 +73,5 @@ int num = 100;
 17:
 number ^= 1<<position;
 обръща бита!
+18.
+http://www.catonmat.net/blog/low-level-bit-hacks-you-absolutely-must-know/
